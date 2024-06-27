@@ -8,8 +8,7 @@ import { ThemedView } from '@/components/ThemedView';
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.mainText}>McTaskFace</Text>
-      <Image src=''></Image>
+      <Image source={require('../../assets/images/logo.gif')} style={styles.logo} />
     </View>
   );
 }
@@ -31,5 +30,9 @@ const styles = StyleSheet.create({
     bottom:100,
     fontStyle: 'italic',
     fontWeight: 'bold'
+  },
+  logo: {
+    width: 200,
+    height: 200
   }
 });
